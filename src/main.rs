@@ -1,11 +1,8 @@
-#[macro_use] extern crate rocket;
-
-#[get("/")]
-fn index() -> &'static str {
-    "Hello, world!"
-}
-
-#[launch]
-fn rocket() -> _ {
-    rocket::build().mount("/", routes![index])
+extern crate iron; 
+use iron::prelude::*;
+use iron::status;
+fn main() {
+    Iron::new(|_: &mut Request| {
+        Ok(Response::with((status::Ok, "Hello world!")))
+    }).http("localhost:8080").unwrap();
 }
