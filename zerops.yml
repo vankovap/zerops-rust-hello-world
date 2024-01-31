@@ -1,0 +1,8 @@
+rust0:
+  build:
+    base: [ rust@1 ]
+    build:
+      - cargo b --release
+    deploy: [ target/release/~app ]
+  run:
+    start: ./app
