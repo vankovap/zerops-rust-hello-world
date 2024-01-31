@@ -6,7 +6,7 @@ use std::net::TcpListener;
 fn main() {
     // Bind allows us to create a connection on the port
     // and gets it ready to accept connections.
-    let listener = TcpListener::bind("127.0.0.1:8080").unwrap();
+    let listener = TcpListener::bind("0.0.0.0:8080").unwrap();
 
     // The listener's accept method waits or 'blocks' until
     // we have a connection and then returns a new TcpStream
