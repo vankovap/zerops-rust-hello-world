@@ -6,4 +6,4 @@ zerops:
         - cargo b --release
       deploy: [ target/release/~app ]
     run:
-      start: ./app
+      start: RUST_LOG=info ./app
