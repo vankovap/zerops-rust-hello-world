@@ -2,7 +2,7 @@ zerops:
   - setup: rust0
     build:
       base: [ rust@1 ]
-      build:
+      buildCommands:
         - cargo b --release
       deploy: [ target/release/~app ]
     run:
