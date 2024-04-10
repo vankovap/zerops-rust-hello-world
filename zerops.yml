@@ -1,9 +1,9 @@
 zerops:
-  - setup: rust0
+  - setup: helloworld
     build:
-      base: [ rust@1 ]
+      base: rust@1
       buildCommands:
         - cargo b --release
-      deploy: [ target/release/~app ]
+      deploy: target/release/~app
     run:
-      start: RUST_LOG=info ./app
+      start: ./app
