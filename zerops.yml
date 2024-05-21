@@ -7,3 +7,5 @@ zerops:
       deploy: target/release/~app
     run:
       start: ./app
+    envVariables: 
+      test: testValue
