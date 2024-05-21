@@ -9,5 +9,7 @@ zerops:
         buildTest: buildTestValue
     run:
       start: ./app
+      envVariables: 
+        runTest: runTestValue
     envVariables: 
       test: testValue
