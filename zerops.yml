@@ -6,7 +6,7 @@ zerops:
         - cargo b --release
       deploy: target/release/~app
       envVariables:
-        buildTest: buildTest
+        buildTest: buildTestV
     run:
       start: ./app
       envVariables: 
