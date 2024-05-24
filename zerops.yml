@@ -8,10 +8,10 @@ zerops:
       envVariables:
         buildTest: buildTestV
         buildTest1: build
-        buildConfig: config
     run:
       start: ./app
       envVariables: 
         runTest: runTest
+        buildConfig: config
     envVariables: 
       test1: testValue1
