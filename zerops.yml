@@ -15,4 +15,4 @@ zerops:
         buildConfig: config
     envVariables: 
       test1: testValue1
-      runTest2: runTest1
+      runTest: runTest1
