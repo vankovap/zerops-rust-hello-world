@@ -12,7 +12,7 @@ zerops:
       start: ./app
       envVariables: 
         runTest: runTest
-        buildConfig: config
+        var1: value1
     envVariables: 
       test1: testValue1
       runTest1: runTest11
