@@ -7,7 +7,7 @@ zerops:
       deploy: target/release/~app
       envVariables:
         buildTest: buildTestV
-        buildTest1: build
+        buildTest1: build1
     run:
       start: ./app
       envVariables: 
